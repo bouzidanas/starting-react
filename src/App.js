@@ -7,7 +7,7 @@ const Pokemon = ({pokemon, onSelect}) => (
     <td>{pokemon.name.english}</td>
     <td>{pokemon.type.join(', ')}</td>
     <td>
-      <button onClick={() => onSelect(pokemon)}>Select</button>
+      <button onClick={() => onSelect(pokemon)}>SELECT</button>
     </td>
   </tr>
 );
@@ -67,7 +67,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{
+    <div className='App' style={{
       margin: 'auto',
       width: 800,
       paddingTop: '1rem',
